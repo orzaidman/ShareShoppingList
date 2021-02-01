@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.Login">
+
+
+    <ImageView
+        android:id="@+id/panel_IMG_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="welcome"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="35dp"
+        android:fontFamily="@font/regular"
+
+        android:id="@+id/login_TXT_title"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/login_TXT_title"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_below="@+id/login_TXT_title"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:gravity="right"
+        >
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_user"
+            android:layout_width="110dp"
+            android:layout_height="110dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            app:shapeAppearanceOverlay="@style/circleImageView"
+            android:layout_centerInParent="true"
+            android:src="@drawable/ic_launcher_background"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:outlineAmbientShadowColor="@color/black"
+            android:hint="First name"
+            android:layout_marginTop="20dp"
+            app:hintTextColor="@color/black"
+            android:id="@+id/mainPage_EDIT_FirstName"
+            app:counterEnabled="true"
+            app:counterMaxLength="10"
+            >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:inputType="textAutoComplete"
+            android:gravity="left"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:fontFamily="@font/regular"
+            />
+        </com.google.android.material.textfield.TextInputLayout >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:outlineAmbientShadowColor="@color/black"
+            android:hint="Last name"
+            app:hintTextColor="@color/black"
+            android:id="@+id/mainPage_EDIT_LastName"
+            app:counterEnabled="true"
+            android:layout_marginTop="20dp"
+
+            app:counterMaxLength="20">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp"
+                android:inputType="textAutoComplete"
+                android:gravity="left"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:fontFamily="@font/regular"
+                />
+        </com.google.android.material.textfield.TextInputLayout >
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColorHint="@color/black"
+        android:gravity="right"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+        android:outlineAmbientShadowColor="@color/black"
+        android:hint="Phone Number"
+        app:hintTextColor="@color/black"
+        android:id="@+id/mainPage_EDIT_phone_number"
+        app:counterEnabled="true"
+            android:layout_marginTop="20dp"
+
+            app:counterMaxLength="10">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:textSize="18dp"
+            android:inputType="number"
+            android:gravity="left"
+            android:background="@android:drawable/dialog_holo_light_frame"
+            android:fontFamily="@font/regular"
+            />
+
+    </com.google.android.material.textfield.TextInputLayout >
+
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="New Family? Enter password:"
+    android:textColor="@color/black"
+    android:textSize="17dp"
+android:fontFamily="@font/regular"
+    android:layout_gravity="left"
+    />
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:gravity="right"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:outlineAmbientShadowColor="@color/black"
+            android:hint="Family Password"
+            app:hintTextColor="@color/black"
+            android:id="@+id/mainPage_EDIT_password"
+            app:counterEnabled="true"
+            android:layout_marginTop="10dp"
+            app:counterMaxLength="20">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="5dp"
+                android:layout_marginRight="5dp"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:fontFamily="@font/regular"
+                android:gravity="left"
+                android:inputType="number"
+                android:textSize="18dp" />
+
+        </com.google.android.material.textfield.TextInputLayout >
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/login_BTN_signIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign in"
+            android:fontFamily="@font/regular"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+            />
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

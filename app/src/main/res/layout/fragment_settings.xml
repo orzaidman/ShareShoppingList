@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SettingsFragment"
+>
+
+    <ImageView
+        android:id="@+id/panel_IMG_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+
+    <TextView
+        android:id="@+id/settings_TXT_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="25dp"
+        android:text="Settings"
+        android:fontFamily="@font/regular"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:gravity="center"
+         />
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/settings_TXT_title"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="550dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_centerHorizontal="true"
+        android:orientation="vertical"
+        android:gravity="right"
+        >
+
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/main_IMG_user"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:src="@drawable/ic_launcher_background"
+            app:shapeAppearanceOverlay="@style/circleImageView" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:outlineAmbientShadowColor="@color/black"
+            android:hint="First name"
+            app:hintTextColor="@color/black"
+            android:id="@+id/settings_EDIT_FirstName"
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/regular"
+
+            app:counterEnabled="true"
+            app:counterMaxLength="10">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp"
+                android:inputType="textAutoComplete"
+                android:clickable="false"
+                android:gravity="left"
+                android:fontFamily="@font/regular"
+
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                />
+        </com.google.android.material.textfield.TextInputLayout >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:outlineAmbientShadowColor="@color/black"
+            android:hint="Last name"
+            android:layout_marginTop="10dp"
+
+            app:hintTextColor="@color/black"
+            android:id="@+id/settings_EDIT_LastName"
+            app:counterEnabled="true"
+            app:counterMaxLength="20">
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp"
+                android:inputType="textAutoComplete"
+                android:gravity="left"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:fontFamily="@font/regular"
+                />
+        </com.google.android.material.textfield.TextInputLayout >
+
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:gravity="right"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:outlineAmbientShadowColor="@color/black"
+            android:hint="Phone Number"
+            app:hintTextColor="@color/black"
+            android:layout_marginTop="10dp"
+
+            android:id="@+id/settings_EDIT_phone_number"
+            app:counterEnabled="true"
+            app:counterMaxLength="10">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp"
+                android:inputType="number"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:gravity="left"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:fontFamily="@font/regular"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout >
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColorHint="@color/black"
+            android:gravity="right"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense"
+            android:outlineAmbientShadowColor="@color/black"
+            android:hint="family ID"
+            android:layout_marginTop="10dp"
+
+            app:hintTextColor="@color/black"
+            android:id="@+id/settings_EDIT_familyID"
+            app:counterEnabled="true"
+            app:counterMaxLength="10">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="5dp"
+                android:layout_marginLeft="5dp"
+                android:textSize="18dp"
+                android:inputType="number"
+                android:gravity="left"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:background="@android:drawable/dialog_holo_light_frame"
+                android:fontFamily="@font/regular"
+                />
+
+        </com.google.android.material.textfield.TextInputLayout >
+
+
+
+
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/settings_BTN_logout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"
+            android:layout_gravity="center"
+            android:fontFamily="@font/regular"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            />
+
+
+    </LinearLayout>
+</ScrollView>
+</RelativeLayout>

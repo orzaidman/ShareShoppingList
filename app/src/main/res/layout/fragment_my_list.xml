@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MyListFragment"
+   >
+
+    <ImageView
+        android:id="@+id/panel_IMG_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+
+    <Button
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/ic_send"
+        android:layout_below="@id/mylist_TXT_title"
+        android:layout_alignParentRight="true"
+        android:layout_margin="10dp"
+        android:id="@+id/mylist_BTN_send"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="25dp"
+        android:fontFamily="@font/regular"
+        android:id="@+id/mylist_TXT_title"
+        android:text="My shopping cart"
+        android:layout_marginTop="10dp"
+        android:gravity="center"/>
+
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/main_LST_news"
+        android:layout_below="@id/mylist_TXT_title"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/mylist_BTN_add"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="40dp"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:id="@+id/mylist_BTN_add"
+        android:src="@drawable/ic_add"  />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:layout_toLeftOf="@id/mylist_BTN_add"
+        android:id="@+id/mylist_BTN_remove"
+        android:src="@drawable/ic_clear"
+
+
+        />
+
+</RelativeLayout>

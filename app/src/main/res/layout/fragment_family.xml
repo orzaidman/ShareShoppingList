@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MyFamilyFragment">
+
+    <ImageView
+        android:id="@+id/panel_IMG_back"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="New Family"
+        android:textSize="25dp"
+        android:fontFamily="@font/regular"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_margin="10dp"
+        android:gravity="center"
+        android:id="@+id/new_Family_title"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Family members:"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="35dp"
+        android:fontFamily="@font/regular"
+        android:layout_below="@id/new_Family_title"
+        android:id="@+id/new_txt"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/new_Family_LST_allFamily"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/new_Family_BTN_add"
+        android:layout_below="@id/new_txt"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="4dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="10dp"
+        android:id="@+id/new_Family_BTN_add"
+        android:src="@drawable/ic_add"  />
+
+
+</RelativeLayout>

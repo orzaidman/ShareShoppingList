@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1056374197112",
+    "firebase_url": "https://shareshoppinglist-d0fed-default-rtdb.firebaseio.com",
+    "project_id": "shareshoppinglist-d0fed",
+    "storage_bucket": "shareshoppinglist-d0fed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1056374197112:android:3502032df6f1818094d68d",
+        "android_client_info": {
+          "package_name": "com.or.shareshoppinglist"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1056374197112-afh2hsdd1k75di30deq063rdhbt43l27.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLv0WdwLhKRXw3h0-SzON6PkHqsxXjSH8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1056374197112-afh2hsdd1k75di30deq063rdhbt43l27.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
